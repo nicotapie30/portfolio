@@ -1,1 +1,22 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+@import '@fontsource-variable/onest';
+@plugin "@tailwindcss/typography";
+
+@utility font-onest {
+  font-family: 'Onest Variable', sans-serif;
+}
+
+@utility font-onest-bold {
+  font-family: 'Onest Variable', sans-serif;
+  font-weight: 700;
+}
+
+@utility hover-link {
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+  &:hover {
+    transition: 100ms ease-in;
+    color: #fff186;
+    transform: scale(1.1);
+  }
+}

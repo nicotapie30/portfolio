@@ -1,6 +1,51 @@
 ---
+import Header from '@/sections/Header.astro';
 import Layout from '../layouts/Layout.astro';
+import LinkButton from '@/components/LinkButton.astro';
+import Linkedin from '@/assets/Linkedin.svg';
+import Github from '@/assets/Github.svg';
+import SendEmail from '@/assets/SendEmail.svg';
 ---
 
 <Layout>
+  <Header />
+
+  <main class="flex flex-col w-[50%] mx-auto items-center">
+    <section class="flex gap-4">
+      <div class="w-20 h-20 rounded-full">
+        <img
+          src="/nico.webp"
+          alt="Imágen de Nico"
+          class="w-full h-full rounded-full object-cover"
+        />
+      </div>
+      <div class="w-[40rem]">
+        <h1 class="font-onest-bold text-5xl text-white mb-6">
+          Hola! Soy Nicolás Tapié
+        </h1>
+        <p class="text-white prose font-onest text-lg">
+          Técnico Superior en Programación apasionado por el Desarrollo de
+          Software 👨🏻‍💻, con <strong class="text-amber-200"
+            >3 años de experiencia en la industria</strong
+          >. Me especializo en <strong class="text-amber-200"
+            >Desarrollo Web.</strong
+          >
+        </p>
+      </div>
+    </section>
+    <section class="flex gap-4 mt-6">
+      <LinkButton title="Contactame" href="mailto:nicoatapie@gmail.com">
+        <SendEmail />
+      </LinkButton>
+      <LinkButton
+        title="Linkedin"
+        href="https://www.linkedin.com/in/nicolasatapiedev30/"
+      >
+        <Linkedin />
+      </LinkButton>
+      <LinkButton title="Github" href="https://github.com/nicotapie30">
+        <Github />
+      </LinkButton>
+    </section>
+  </main>
 </Layout>
