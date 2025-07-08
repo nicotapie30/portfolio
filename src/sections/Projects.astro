@@ -1,0 +1,100 @@
+---
+import ProjectLinkButton from '@/components/ProjectLinkButton.astro';
+import IconsProjects from '@/components/IconsProjects.astro';
+---
+
+<section class="w-full h-full p-4 mt-40">
+  <h2 class="font-onest-bold text-center mb-10 text-white text-5xl">
+    Proyectos
+  </h2>
+
+  <div
+    class="grid bg-gray-800/10 border border-gray-700/30 rounded-lg grid-cols-12 grid-rows-10 gap-4 p-4"
+  >
+    <div
+      class="group col-span-6 relative overflow-hidden row-span-5 h-80 rounded-lg border shadow-gray-950 shadow-md border-gray-500/40"
+    >
+      <img
+        src="src/assets/screenshots/geo-api.png"
+        alt=""
+        class="absolute hover:scale-105 group-hover:scale-105 transition-all group-hover:mask-fade-name border group-hover:opacity-85 object-cover h-full rounded-lg"
+      />
+      <div
+        class="flex items-center absolute bottom-10 justify-between w-full px-6"
+      >
+        <ProjectLinkButton href="https://geoargentina-api.vercel.app/" />
+        <div
+          class="w-auto shadow-xl py-2 border gap-2 border-gray-300 rounded-xl group group-hover:visible invisible flex justify-center items-center bg-transparent backdrop-blur-lg px-2.5"
+        >
+          <IconsProjects src="src/assets/Nodejs.svg" alt="Nodejs" />
+          <IconsProjects src="src/assets/Astro.svg" alt="Astro" />
+          <IconsProjects src="src/assets/Tailwindcss.svg" alt="Tailwindcss" />
+          <IconsProjects src="src/assets/Vercel.svg" alt="Vercel" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="relative group col-span-6 row-span-5 overflow-hidden col-start-1 border shadow-gray-900 shadow-md border-gray-500/40 row-start-6 rounded-lg h-80"
+    >
+      <img
+        src="src/assets/screenshots/memory.png"
+        alt=""
+        class="absolute hover:scale-105 transition-all group-hover:scale-105 group-hover:mask-fade-name group-hover:opacity-85 object-cover h-full rounded-lg"
+      />
+      <div
+        class="flex items-center absolute bottom-10 justify-between w-full px-6"
+      >
+        <ProjectLinkButton href="https://memory-game-prog.vercel.app/Gaming" />
+        <div
+          class="w-auto py-2 border shadow-xl gap-2 border-gray-300 rounded-xl group group-hover:visible invisible flex justify-center items-center bg-transparent backdrop-blur-lg px-2.5"
+        >
+          <IconsProjects src="src/assets/Css.svg" alt="Css" />
+          <IconsProjects src="src/assets/Astro.svg" alt="Astro" />
+          <IconsProjects src="src/assets/Vercel.svg" alt="Vercel" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-span-6 group relative row-span-5 overflow-hidden col-start-7 border shadow-gray-900 shadow-md border-gray-500/40 row-start-1 h-80 rounded-lg"
+    >
+      <img
+        src="src/assets/screenshots/cine-info.png"
+        alt=""
+        class="absolute hover:scale-105 transition-all group-hover:scale-105 group-hover:mask-fade-name group-hover:opacity-85 object-cover h-full rounded-lg"
+      />
+      <div
+        class="flex items-center absolute bottom-10 justify-between w-full px-6"
+      >
+        <ProjectLinkButton href="https://cine-info-ten.vercel.app/" />
+        <div
+          class="w-auto py-2 border gap-2 shadow-xl border-gray-300 rounded-xl group group-hover:visible invisible flex justify-center items-center bg-transparent backdrop-blur-lg px-2.5"
+        >
+          <IconsProjects src="src/assets/Astro.svg" alt="Astro" />
+          <IconsProjects src="src/assets/Tailwindcss.svg" alt="Tailwindcss" />
+          <IconsProjects src="src/assets/Vercel.svg" alt="Vercel" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-span-6 group relative row-span-5 overflow-hidden col-start-7 border shadow-gray-900 shadow-md border-gray-500/40 row-start-6 h-80 rounded-lg"
+    >
+      <img
+        src="src/assets/screenshots/weather.png"
+        alt=""
+        class="absolute hover:scale-105 transition-all group-hover:scale-105 group-hover:mask-fade-name group-hover:opacity-85 object-cover h-full rounded-lg"
+      />
+      <div
+        class="flex items-center absolute bottom-10 justify-between w-full px-6"
+      >
+        <ProjectLinkButton href="https://weatherwatch-app.vercel.app/" />
+        <div
+          class="w-auto py-2 border gap-2 shadow-xl border-gray-300 rounded-xl group group-hover:visible invisible flex justify-center items-center bg-transparent backdrop-blur-lg px-2.5"
+        >
+          <IconsProjects src="src/assets/React.svg" alt="React" />
+          <IconsProjects src="src/assets/Tailwindcss.svg" alt="Tailwindcss" />
+          <IconsProjects src="src/assets/Vercel.svg" alt="Vercel" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 @import '@fontsource-variable/onest';
 @plugin "@tailwindcss/typography";
+@plugin "@midudev/tailwind-animations";
 
 @utility font-onest {
   font-family: 'Onest Variable', sans-serif;
@@ -19,4 +20,8 @@
     color: #fff186;
     transform: scale(1.1);
   }
+}
+
+@utility mask-fade-name {
+  mask-image: linear-gradient(to bottom, #1f1f30 60%, transparent 100%);
 }
