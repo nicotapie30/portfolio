@@ -11,6 +11,9 @@ importers:
       '@fontsource-variable/onest':
         specifier: ^5.2.9
         version: 5.2.9
+      '@glidejs/glide':
+        specifier: ^3.7.1
+        version: 3.7.1
       '@midudev/tailwind-animations':
         specifier: ^0.2.0
         version: 0.2.0(tailwindcss@4.1.10)
@@ -232,6 +235,9 @@ packages:
 
   '@fontsource-variable/onest@5.2.9':
     resolution: {integrity: sha512-yMYrvMibKYTckL2vxeC+Z9buANY1GNgwG8oMHx3I7sjqxeOmHufHsI+Bbt3kYSoM0ominSr3qgAjMiFNWog6Uw==}
+
+  '@glidejs/glide@3.7.1':
+    resolution: {integrity: sha512-8he0pZpLSqTesSFYiuWdhBmtdlYSPWxfPUCKtkkiX6ZmT8UdMdmoFPtJaOwLBXv4p2JiGxqbuPdiRGGo2e/htQ==}
 
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
@@ -1889,6 +1895,8 @@ snapshots:
     optional: true
 
   '@fontsource-variable/onest@5.2.9': {}
+
+  '@glidejs/glide@3.7.1': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
