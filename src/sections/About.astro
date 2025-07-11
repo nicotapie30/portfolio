@@ -1,0 +1,30 @@
+---
+const { id } = Astro.props;
+---
+
+<section class="w-full mt-40" id={id}>
+  <h2 class="font-onest-bold text-center mb-10 text-white text-5xl">
+    Sobre mi
+  </h2>
+
+  <div
+    class="mx-auto font-onest flex flex-col gap-4 w-[40rem] h-auto border border-gray-700/30 rounded-md p-4 bg-gray-900/50 shadow-2xl shadow-[#212130]/70"
+  >
+    <p class="prose text-zinc-100">
+      Mi nombre es Nicolás Alejandro Tapié, tengo 23 años y soy de Ataliva Roca,
+      un pequeño pueblo de La Pampa, Argentina.
+    </p>
+    <p class="prose text-zinc-100">
+      Me gradué como <span class="text-amber-100">
+        Técnico Superior en Programación
+      </span> en Teclab.
+    </p>
+    <p class="prose text-zinc-100">
+      Actualmente trabajo de manera freelance en proyectos particulares, con
+      mucho entusiasmo y motivación por integrarme a un equipo de desarrollo
+      donde pueda seguir <span class="text-amber-100"
+        >creciendo profesionalmente</span
+      >.
+    </p>
+  </div>
+</section>
