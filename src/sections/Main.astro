@@ -3,45 +3,97 @@ import LinkButton from '@/components/LinkButton.astro';
 import Linkedin from '@/assets/Linkedin.svg';
 import Github from '@/assets/Github.svg';
 import SendEmail from '@/assets/SendEmail.svg';
+import ImagesMainLeft from '@/components/ImagesMainLeft.astro';
+import ImagesMainRight from '@/components/ImagesMainRight.astro';
 ---
 
-<main class="flex flex-col w-[50%] mx-auto items-center">
-  <section class="flex gap-4 mt-72">
-    <div class="w-20 h-20 rounded-full animate-fade-in animate-delay-100">
-      <img
-        src="/nico.webp"
-        alt="Imágen de Nico"
-        class="w-full h-full rounded-full object-cover"
-      />
-    </div>
-    <div class="w-[40rem]">
-      <h1 class="font-onest-bold text-5xl text-white mb-6 animate-fade-in-up">
-        Hola! Soy Nicolás Tapié
-      </h1>
-      <p
-        class="text-white prose font-onest text-lg animate-fade-in-up animate-delay-400"
-      >
-        Técnico Superior en Programación apasionado por el Desarrollo de
-        Software 👨🏻‍💻, con <strong class="text-amber-200"
-          >3 años de experiencia en la industria</strong
-        >. Me especializo en <strong class="text-amber-200"
-          >Desarrollo Web.</strong
+<main class="flex w-[50%] mx-auto relative">
+  <ImagesMainLeft
+    src="src/assets/JavaScript.svg"
+    alt="JavaScript"
+    class="w-20 -left-60 top-60 animate-pulse-fade-in animate-delay-300"
+  />
+
+  <ImagesMainLeft
+    src="src/assets/Astro.svg"
+    alt="Astro"
+    class="w-20 -left-60 top-96 animate-pulse-fade-in animate-delay-500"
+  />
+
+  <ImagesMainLeft
+    src="src/assets/Css.svg"
+    alt="Css"
+    class="w-20 -left-96 top-52 animate-pulse-fade-in animate-delay-300"
+  />
+
+  <ImagesMainLeft
+    src="src/assets/Vite.svg"
+    alt="Vite"
+    class="w-20 -left-96 top-96 animate-pulse-fade-in animate-delay-100"
+  />
+
+  <div class="flex flex-col items-center">
+    <section class="flex gap-4 mt-72">
+      <div class="w-20 h-20 rounded-full animate-fade-in animate-delay-100">
+        <img
+          src="/nico.webp"
+          alt="Imágen de Nico"
+          class="w-full h-full rounded-full object-cover"
+        />
+      </div>
+      <div class="w-[40rem]">
+        <h1 class="font-onest-bold text-5xl text-white mb-6 animate-fade-in-up">
+          Hola! Soy Nicolás Tapié
+        </h1>
+        <p
+          class="text-white prose font-onest text-lg animate-fade-in-up animate-delay-400"
         >
-      </p>
-    </div>
-  </section>
-  <section class="flex gap-4 mt-6 mb-40">
-    <LinkButton title="Contactame" href="mailto:nicoatapie@gmail.com">
-      <SendEmail />
-    </LinkButton>
-    <LinkButton
-      title="Linkedin"
-      href="https://www.linkedin.com/in/nicolasatapiedev30/"
-    >
-      <Linkedin />
-    </LinkButton>
-    <LinkButton title="Github" href="https://github.com/nicotapie30">
-      <Github />
-    </LinkButton>
-  </section>
+          Técnico Superior en Programación apasionado por el Desarrollo de
+          Software 👨🏻‍💻, con <strong class="text-amber-200"
+            >3 años de experiencia en la industria</strong
+          >. Me especializo en <strong class="text-amber-200"
+            >Desarrollo Web.</strong
+          >
+        </p>
+      </div>
+    </section>
+    <section class="flex gap-4 mt-6 mb-40">
+      <LinkButton title="Contactame" href="mailto:nicoatapie@gmail.com">
+        <SendEmail />
+      </LinkButton>
+      <LinkButton
+        title="Linkedin"
+        href="https://www.linkedin.com/in/nicolasatapiedev30/"
+      >
+        <Linkedin />
+      </LinkButton>
+      <LinkButton title="Github" href="https://github.com/nicotapie30">
+        <Github />
+      </LinkButton>
+    </section>
+  </div>
+
+  <ImagesMainRight
+    src="src/assets/Html.svg"
+    alt="Html"
+    class="w-20 -right-60 top-60 animate-pulse-fade-in animate-delay-200"
+  />
+
+  <ImagesMainRight
+    src="src/assets/Tailwindcss.svg"
+    alt="Tailwindcss"
+    class="w-20 -right-60 top-96 animate-pulse-fade-in animate-delay-400"
+  />
+
+  <ImagesMainRight
+    src="src/assets/React.svg"
+    alt="React"
+    class="w-20 -right-96 top-52 animate-pulse-fade-in animate-delay-300"
+  />
+
+  <ImagesMainRight
+    src="src/assets/Nodejs.svg"
+    alt="Nodejs"
+    class="w-20 -right-96 top-96 animate-pulse-fade-in animate-delay-500"
+  />
 </main>
