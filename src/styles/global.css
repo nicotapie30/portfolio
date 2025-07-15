@@ -25,3 +25,12 @@
 @utility mask-fade-name {
   mask-image: linear-gradient(to bottom, #1f1f30 60%, transparent 100%);
 }
+
+@utility my-border-dashed {
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+}
+
+@utility my-animate {
+  transition: all 5s linear;
+}

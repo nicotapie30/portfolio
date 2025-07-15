@@ -6,6 +6,24 @@ const { src, alt, class: className = '' } = Astro.props;
   <img
     src={src}
     alt={alt}
-    class="w-30 drop-shadow-2xl drop-shadow-purple-600/10"
+    class="my-image-right w-30 drop-shadow-2xl drop-shadow-purple-600/10 my-animate opacity-55"
   />
 </div>
+
+<script>
+  const floatImages = document.querySelectorAll('.my-image-right');
+
+  const moveImages = () => {
+    floatImages.forEach((image) => {
+      const x = Math.random() * 100 - 30;
+      const y = Math.random() * 100 - 30;
+
+      //@ts-ignore
+      image.style.transform = `translate(${x}px, ${y}px)`;
+    });
+  };
+
+  moveImages();
+
+  setInterval(moveImages, 4000);
+</script>

@@ -2,4 +2,10 @@
 const { src, alt } = Astro.props;
 ---
 
-<img src={src} alt={alt} class="w-8 h-8 shadow-2xl" />
+<div class="relative group/img" tabindex="0">
+  <img src={src} alt={alt} class="w-8 h-8 z-10 shadow-2xl" />
+  <span
+    class="absolute invisible z-20 -translate-[50%] left-[50%] -top-5 bg-gray-800/50 p-1 border border-white text-white rounded-lg backdrop-blur-3xl group-hover/img:visible group-focus-within/img:visible"
+    aria-label={alt}>{alt}</span
+  >
+</div>
