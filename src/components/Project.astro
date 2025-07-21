@@ -13,7 +13,7 @@ const { src, alt, class: className = '' } = Astro.props;
   />
 
   <div
-    class="relative z-10 flex flex-col justify-end h-full w-full p-6 bg-gradient-to-t from-slate-950/50 via-slate-950/30 to-transparent"
+    class="relative z-10 flex flex-col justify-end h-full w-full p-6 bg-gradient-to-t from-slate-950/50 via-slate-950/30 to-transparent group-focus-within:bg-gradient-to-t group-focus-within:from-slate-950/70 group-focus-within:via-slate-950/50 group-focus-within:to-transparent hover:bg-gradient-to-t hover:from-slate-950/70 hover:via-slate-950/50 hover:to-transparent transition-all"
   >
     <slot />
   </div>
