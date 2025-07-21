@@ -1,0 +1,32 @@
+---
+import ArrowUp from '@/assets/ArrowUp.svg';
+---
+
+<button
+  class="top fixed bottom-6 right-6 z-50 p-3 bg-slate-900/80 opacity-0 rounded-lg shadow-lg cursor-pointer hover:bg-slate-800 transition-colors duration-300"
+  aria-label="Scroll to top"
+  tabindex="0"
+>
+  <ArrowUp class="text-gray-400" />
+</button>
+
+<script>
+  const buttonTop = document.querySelector('.top');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+      buttonTop?.classList.remove('opacity-0');
+      buttonTop?.classList.add('opacity-100');
+    } else {
+      buttonTop?.classList.remove('opacity-100');
+      buttonTop?.classList.add('opacity-0');
+    }
+  });
+
+  buttonTop?.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  });
+</script>

@@ -1,5 +1,6 @@
 ---
 import ProjectLinkButton from '@/components/ProjectLinkButton.astro';
+import DetailProject from '@/components/DetailProject.astro';
 import IconsProjects from '@/components/IconsProjects.astro';
 
 const { id } = Astro.props;
@@ -11,94 +12,116 @@ const { id } = Astro.props;
   </h2>
 
   <div
-    class="grid bg-gray-800/10 border-1 border-gray-700/30 rounded-lg grid-cols-12 grid-rows-10 gap-4 p-4 shadow-2xl shadow-[#212130]/90 animate-fade-in"
+    class="grid bg-gray-800/10 border-1 border-gray-700/30 rounded-2xl grid-cols-12 grid-rows-10 gap-4 p-4 shadow-2xl shadow-[#212130]/90 animate-fade-in"
   >
     <div
-      class="group col-span-6 relative overflow-hidden row-span-5 h-80 rounded-lg border shadow-gray-900 shadow-md border-gray-500/50"
+      class="group col-span-6 relative overflow-hidden row-span-5 h-80 rounded-lg border shadow-gray-900 shadow-md border-gray-200/40 hover:border-gray-100/90 bg-gradient-to-br from-slate-900 to-slate-800 transition-all"
       tabindex="0"
     >
       <img
         src="src/assets/screenshots/geo-api.png"
-        alt=""
-        class="absolute hover:scale-105 group-hover:scale-105 transition-all group-hover:mask-fade-name group-focus-within:mask-fade-name group-focus-within:opacity-85 border group-hover:opacity-85 group-focus-within::scale-105 object-cover h-full rounded-lg"
+        alt="GeoArgentina API"
+        class="absolute inset-0 h-full w-full rounded-lg transition-transform ease-in-out group-hover:scale-105 group-focus-within:scale-105"
       />
+
       <div
-        class="flex items-center absolute bottom-10 justify-between w-full px-6"
+        class="relative z-10 flex flex-col justify-end h-full w-full p-6 bg-gradient-to-t from-slate-950/50 via-slate-950/30 to-transparent"
       >
-        <ProjectLinkButton href="https://geoargentina-api.vercel.app/" />
-        <div
-          class="w-auto shadow-xl py-2 border gap-2 border-gray-300 rounded-xl group group-hover:visible group-focus-within:visible invisible flex justify-center items-center bg-transparent backdrop-blur-lg px-2.5"
-        >
-          <IconsProjects src="src/assets/Nodejs.svg" alt="Nodejs" />
-          <IconsProjects src="src/assets/Astro.svg" alt="Astro" />
-          <IconsProjects src="src/assets/Tailwindcss.svg" alt="Tailwindcss" />
-          <IconsProjects src="src/assets/Vercel.svg" alt="Vercel" />
+        <div class="flex justify-between items-center pb-2">
+          <ProjectLinkButton href="https://geoargentina-api.vercel.app/" />
+          <DetailProject
+            content="GeoArgentina API es una herramienta RESTful que proporciona datos geográficos detallados y actualizados sobre Argentina. Facilita el acceso a información de provincias, departamentos, localidades y otros datos territoriales, ideal para desarrolladores que necesiten integrar datos geoespaciales en sus aplicaciones, sitios web o sistemas de información. La API es sencilla de usar, está bien documentada y optimizada para consultas rápidas y eficientes."
+          >
+            <IconsProjects src="src/assets/Nodejs.svg" alt="Nodejs" />
+            <IconsProjects src="src/assets/Astro.svg" alt="Astro" />
+            <IconsProjects src="src/assets/Html.svg" alt="Html" />
+            <IconsProjects src="src/assets/Tailwindcss.svg" alt="Tailwindcss" />
+            <IconsProjects src="src/assets/React.svg" alt="React" />
+            <IconsProjects src="src/assets/Vercel.svg" alt="Vercel" />
+          </DetailProject>
         </div>
       </div>
     </div>
+
     <div
-      class="relative group col-span-6 row-span-5 overflow-hidden col-start-1 border shadow-gray-900 shadow-md border-gray-500/40 row-start-6 rounded-lg h-80"
+      class="col-span-6 row-span-5 col-start-1 row-start-6 h-80 rounded-2xl shadow-lg border border-white/10 overflow-hidden relative group transition-all bg-gradient-to-br from-slate-900 to-slate-800"
       tabindex="0"
     >
       <img
         src="src/assets/screenshots/memory.png"
-        alt=""
-        class="absolute hover:scale-105 transition-all group-hover:scale-105 group-focus-within:mask-fade-name group-hover:mask-fade-name group-hover:opacity-85 object-cover h-full rounded-lg"
+        alt="Memory Game"
+        class="absolute inset-0 h-full w-full rounded-2xl transition-transform ease-in-out group-hover:scale-105 object-cover group-focus-within:scale-105"
       />
+
       <div
-        class="flex items-center absolute bottom-10 justify-between w-full px-6"
+        class="relative z-10 flex flex-col justify-end h-full w-full p-6 bg-gradient-to-t from-slate-950/50 via-slate-950/30 to-transparent"
       >
-        <ProjectLinkButton href="https://memory-game-prog.vercel.app/Gaming" />
-        <div
-          class="w-auto py-2 border shadow-xl gap-2 border-gray-300 rounded-xl group group-hover:visible invisible group-focus-within:visible flex justify-center items-center bg-transparent backdrop-blur-lg px-2.5"
-        >
-          <IconsProjects src="src/assets/Css.svg" alt="Css" />
-          <IconsProjects src="src/assets/Astro.svg" alt="Astro" />
-          <IconsProjects src="src/assets/Vercel.svg" alt="Vercel" />
+        <div class="flex justify-between items-center pb-2">
+          <ProjectLinkButton
+            href="https://memory-game-prog.vercel.app/Gaming"
+          />
+          <DetailProject
+            content="Memory Game es una aplicación web interactiva desarrollada con Astro que pone a prueba tu memoria visual. El objetivo es encontrar todas las parejas de cartas en el menor tiempo posible. La interfaz es completamente responsive, adaptándose a dispositivos móviles, tabletas y escritorios, garantizando una experiencia de usuario fluida en cualquier pantalla. Además, ofrece diferentes niveles de dificultad para desafiar tus habilidades cognitivas."
+          >
+            <IconsProjects src="src/assets/Astro.svg" alt="Astro" />
+            <IconsProjects src="src/assets/Css.svg" alt="Css" />
+            <IconsProjects src="src/assets/Html.svg" alt="Html" />
+            <IconsProjects src="src/assets/JavaScript.svg" alt="JavaScript" />
+            <IconsProjects src="src/assets/Vercel.svg" alt="Vercel" />
+          </DetailProject>
         </div>
       </div>
     </div>
+
     <div
-      class="col-span-6 group relative row-span-5 overflow-hidden col-start-7 border shadow-gray-900 shadow-md border-gray-500/40 row-start-1 h-80 rounded-lg"
+      class="col-span-6 row-span-5 col-start-7 row-start-1 h-80 rounded-2xl shadow-lg border border-white/10 overflow-hidden relative group transition-all bg-gradient-to-br from-slate-900 to-slate-800"
       tabindex="0"
     >
       <img
         src="src/assets/screenshots/cine-info.png"
-        alt=""
-        class="absolute hover:scale-105 transition-all group-hover:scale-105 group-focus-within:mask-fade-name group-hover:mask-fade-name group-hover:opacity-85 object-cover h-full rounded-lg"
+        alt="Cine Info Ten"
+        class="absolute inset-0 h-full w-full rounded-2xl transition-transform ease-in-out group-hover:scale-105 group-focus-within:scale-105"
       />
+
       <div
-        class="flex items-center absolute bottom-10 justify-between w-full px-6"
+        class="relative z-10 flex flex-col justify-end h-full w-full p-6 bg-gradient-to-t from-slate-950/50 via-slate-950/30 to-transparent"
       >
-        <ProjectLinkButton href="https://cine-info-ten.vercel.app/" />
-        <div
-          class="w-auto py-2 border gap-2 shadow-xl border-gray-300 rounded-xl group-focus-within:visible group group-hover:visible invisible flex justify-center items-center bg-transparent backdrop-blur-lg px-2.5"
-        >
-          <IconsProjects src="src/assets/Astro.svg" alt="Astro" />
-          <IconsProjects src="src/assets/Tailwindcss.svg" alt="Tailwindcss" />
-          <IconsProjects src="src/assets/Vercel.svg" alt="Vercel" />
+        <div class="flex justify-between items-center pb-2">
+          <ProjectLinkButton href="https://cine-info-ten.vercel.app/" />
+          <DetailProject
+            content="Cine Info Ten es una aplicación web interactiva desarrollada con Astro y la API de TMDB. Ofrece información detallada sobre películas y series, trailers, sinopsis, elencos y más. Su diseño es completamente responsive, brindando una experiencia óptima en todos los dispositivos."
+          >
+            <IconsProjects src="src/assets/Astro.svg" alt="Astro" />
+            <IconsProjects src="src/assets/Tailwindcss.svg" alt="Tailwindcss" />
+            <IconsProjects src="src/assets/JavaScript.svg" alt="JavaScript" />
+            <IconsProjects src="src/assets/Vercel.svg" alt="Vercel" />
+          </DetailProject>
         </div>
       </div>
     </div>
+
     <div
-      class="col-span-6 group relative row-span-5 overflow-hidden col-start-7 border shadow-gray-900 shadow-md border-gray-500/40 row-start-6 h-80 rounded-lg"
+      class="col-span-6 group relative row-span-5 overflow-hidden col-start-7 border shadow-gray-900 shadow-md border-gray-200/40 hover:border-gray-100/90 row-start-6 h-80 rounded-lg bg-gradient-to-br from-slate-900 to-slate-800 transition-all"
       tabindex="0"
     >
       <img
         src="src/assets/screenshots/weather.png"
-        alt=""
-        class="absolute hover:scale-105 transition-all group-hover:scale-105 group-focus-within:mask-fade-name group-hover:mask-fade-name group-hover:opacity-85 object-cover h-full rounded-lg"
+        alt="WeatherWatch"
+        class="absolute inset-0 h-full w-full rounded-lg transition-transform ease-in-out group-hover:scale-105 group-focus-within:scale-105"
       />
+
       <div
-        class="flex items-center absolute bottom-10 justify-between w-full px-6"
+        class="relative z-10 flex flex-col justify-end h-full w-full p-6 bg-gradient-to-t from-slate-950/50 via-slate-950/30 to-transparent"
       >
-        <ProjectLinkButton href="https://weatherwatch-app.vercel.app/" />
-        <div
-          class="w-auto py-2 border gap-2 shadow-xl border-gray-300 rounded-xl group group-hover:visible group-focus-within:visible invisible flex justify-center items-center bg-transparent backdrop-blur-lg px-2.5"
-        >
-          <IconsProjects src="src/assets/React.svg" alt="React" />
-          <IconsProjects src="src/assets/Tailwindcss.svg" alt="Tailwindcss" />
-          <IconsProjects src="src/assets/Vercel.svg" alt="Vercel" />
+        <div class="flex justify-between items-center pb-2">
+          <ProjectLinkButton href="https://weatherwatch-app.vercel.app/" />
+          <DetailProject
+            content="WeatherWatch es una aplicación web moderna y fácil de usar que te permite consultar el pronóstico del tiempo en tiempo real. Desarrollada con React y desplegada en Vercel, la aplicación ofrece una interfaz limpia y responsiva que se adapta perfectamente a dispositivos móviles y de escritorio. Utiliza la API de OpenWeatherMap para proporcionar información precisa sobre el clima, incluyendo temperatura, humedad, velocidad del viento y condiciones generales. Además, permite buscar el clima por ciudad o acceder a la ubicación actual del usuario para obtener datos meteorológicos personalizados."
+          >
+            <IconsProjects src="src/assets/Html.svg" alt="Html" />
+            <IconsProjects src="src/assets/React.svg" alt="React" />
+            <IconsProjects src="src/assets/Vercel.svg" alt="Vercel" />
+          </DetailProject>
         </div>
       </div>
     </div>

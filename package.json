@@ -13,7 +13,7 @@
     "@glidejs/glide": "^3.7.1",
     "@midudev/tailwind-animations": "^0.2.0",
     "@tailwindcss/vite": "^4.1.10",
-    "astro": "^5.11.0",
+    "astro": "^5.12.0",
     "tailwindcss": "^4.1.10"
   },
   "devDependencies": {
