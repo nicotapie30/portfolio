@@ -1,4 +1,4 @@
-import Glide from '@glidejs/glide';
+import Glide from 'https://cdn.jsdelivr.net/npm/@glidejs/glide@3.5.2/dist/glide.esm.min.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const glide = new Glide('.glide', {
