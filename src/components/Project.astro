@@ -3,7 +3,7 @@ const { src, alt, class: className = '' } = Astro.props;
 ---
 
 <div
-  class={`group ${className} col-span-6 relative overflow-hidden row-span-5 h-80 rounded-lg border shadow-gray-900 shadow-md border-gray-200/40 hover:border-gray-100/90 bg-gradient-to-br from-slate-900 to-slate-800 transition-all`}
+  class={`group ${className} h-40 col-span-6 relative overflow-hidden row-span-5  md:h-80 rounded-lg border shadow-gray-900 shadow-md border-gray-200/40 hover:border-gray-100/90 bg-gradient-to-br from-slate-900 to-slate-800 transition-all`}
   tabindex="0"
 >
   <img
@@ -13,7 +13,7 @@ const { src, alt, class: className = '' } = Astro.props;
   />
 
   <div
-    class="relative z-10 flex flex-col justify-end h-full w-full p-6 bg-gradient-to-t from-slate-950/50 via-slate-950/30 to-transparent group-focus-within:bg-gradient-to-t group-focus-within:from-slate-950/70 group-focus-within:via-slate-950/50 group-focus-within:to-transparent hover:bg-gradient-to-t hover:from-slate-950/70 hover:via-slate-950/50 hover:to-transparent transition-all"
+    class="relative z-10 flex flex-col justify-end h-full w-full p-1 md:p-6 bg-gradient-to-t from-slate-950/50 via-slate-950/30 to-transparent group-focus-within:bg-gradient-to-t group-focus-within:from-slate-950/70 group-focus-within:via-slate-950/50 group-focus-within:to-transparent hover:bg-gradient-to-t hover:from-slate-950/70 hover:via-slate-950/50 hover:to-transparent transition-all"
   >
     <slot />
   </div>

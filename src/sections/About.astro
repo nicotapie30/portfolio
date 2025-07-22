@@ -6,35 +6,46 @@ import { Instagram, Linkedin, Github, SendEmail } from '@/assets/index.js';
 const { id } = Astro.props;
 ---
 
-<section class="w-full mt-40 h-full" id={id}>
-  <h2 class="font-onest-bold text-center mb-10 text-white text-5xl">
+<section class="w-full mt-10 md:mt-40 h-full" id={id}>
+  <h2
+    class="font-onest-bold text-center mb-5 md:mb-10 text-white text-2xl md:text-5xl"
+  >
     Sobre mi
   </h2>
 
-  <article class="w-full relative">
+  <article class="w-full px-1 md:px-0 relative">
     <div
-      class="mx-auto items-center font-onest flex flex-col gap-4 w-[40rem] h-auto border border-gray-700/50 rounded-md p-1.5 bg-gray-900/50 shadow-2xl shadow-[#212130]/70"
+      class="mx-auto items-center font-onest flex flex-col gap-4 md:w-[40rem] h-auto border border-gray-700/50 rounded-md p-1.5 bg-gray-900/50 shadow-2xl shadow-[#212130]/70"
       tabindex="0"
       aria-label="Sobre Mí"
     >
       <article class="w-full h-full my-border-dashed">
-        <div class="w-full h-full p-6">
-          <p class="prose text-zinc-100">
-            Mi nombre es Nicolás Alejandro Tapié, tengo 23 años y soy de Ataliva
-            Roca, un pequeño pueblo de La Pampa, Argentina.
-          </p>
-          <p class="prose text-zinc-100">
-            Me gradué como <span class="text-amber-100">
-              Técnico Superior en Programación
-            </span> en Teclab.
-          </p>
-          <p class="prose text-zinc-100">
-            Actualmente trabajo de manera freelance en proyectos particulares,
-            con mucho entusiasmo y motivación por integrarme a un equipo de
-            desarrollo donde pueda seguir <span class="text-amber-100"
-              >creciendo profesionalmente</span
-            >.
-          </p>
+        <div
+          class="flex flex-col md:flex-row items-center justify-between pt-4 gap-4"
+        >
+          <div class="w-full h-full p-6 order-2 md:order-1 md:w-[80%]">
+            <p class="prose text-zinc-100">
+              Mi nombre es Nicolás Alejandro Tapié, tengo 23 años y soy de
+              Ataliva Roca, un pequeño pueblo de La Pampa, Argentina.
+            </p>
+            <p class="prose text-zinc-100">
+              Me gradué como <span class="text-amber-100">
+                Técnico Superior en Programación
+              </span> en Teclab.
+            </p>
+            <p class="prose text-zinc-100">
+              Actualmente trabajo de manera freelance en proyectos particulares,
+              con mucho entusiasmo y motivación por integrarme a un equipo de
+              desarrollo donde pueda seguir <span class="text-amber-100"
+                >creciendo profesionalmente</span
+              >.
+            </p>
+          </div>
+          <div
+            class="w-56 md:w-80 xl:-mr-60 md:-right-10 h-auto border order-1 md:order-2 rotate-z-3 border-gray-700/50 rounded-md p-1.5 bg-[#0d111a] shadow-2xl shadow-[#212130]/70"
+          >
+            <img src="src/assets/imgs/nico.png" alt="Nico" />
+          </div>
         </div>
 
         <div class="w-full p-4 flex items-center justify-center gap-4">
@@ -61,12 +72,6 @@ const { id } = Astro.props;
           </SocialLinks>
         </div>
       </article>
-
-      <div
-        class="w-56 h-auto absolute right-40 top-8 border rotate-z-3 border-gray-700/50 rounded-md p-1.5 bg-[#0d111a] shadow-2xl shadow-[#212130]/70"
-      >
-        <img src="src/assets/imgs/nico.png" alt="Nico" />
-      </div>
     </div>
   </article>
 </section>

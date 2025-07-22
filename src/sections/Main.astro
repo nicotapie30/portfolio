@@ -7,7 +7,7 @@ import ImagesMainLeft from '@/components/ImagesMainLeft.astro';
 import ImagesMainRight from '@/components/ImagesMainRight.astro';
 ---
 
-<main class="flex w-[50%] mx-auto relative justify-center">
+<main class="flex w-full lg:w-[50%] mx-auto relative justify-center">
   <ImagesMainLeft
     src="src/assets/JavaScript.svg"
     alt="JavaScript"
@@ -33,20 +33,26 @@ import ImagesMainRight from '@/components/ImagesMainRight.astro';
   />
 
   <div class="flex flex-col items-center">
-    <section class="flex items-center gap-4 mt-72">
-      <div class="w-44 h-44 rounded-full animate-fade-in animate-delay-100">
+    <section
+      class="flex flex-col items-center md:flex md:flex-row md:items-center gap-4 mt-32 md:mt-72"
+    >
+      <div
+        class="w-20 h-20 lg:w-44 lg:h-44 ml-6 self-start lg:self-auto rounded-full animate-fade-in animate-delay-100"
+      >
         <img
           src="/nico.webp"
           alt="Imágen de Nico"
           class="w-full h-full rounded-full object-cover"
         />
       </div>
-      <div class="w-[40rem]">
-        <h1 class="font-onest-bold text-5xl text-white mb-6 animate-fade-in-up">
+      <div class="w-[20rem] md:w-[40rem]">
+        <h1
+          class="font-onest-bold text-2xl text-center md:text-start md:text-5xl text-white mb-6 animate-fade-in-up"
+        >
           Hola! Soy Nicolás Tapié
         </h1>
         <p
-          class="text-white prose font-onest text-lg animate-fade-in-up animate-delay-400"
+          class="text-white prose font-onest text-base md:text-lg md:text-start text-center animate-fade-in-up animate-delay-400"
         >
           Técnico Superior en Programación apasionado por el Desarrollo de
           Software 👨🏻‍💻, con <strong class="text-amber-200"
@@ -57,7 +63,7 @@ import ImagesMainRight from '@/components/ImagesMainRight.astro';
         </p>
       </div>
     </section>
-    <section class="flex gap-4 mt-6 mb-40">
+    <section class="flex gap-4 mt-6 mb-20 md:mb-40">
       <LinkButton title="Contactame" href="mailto:nicoatapie@gmail.com">
         <SendEmail />
       </LinkButton>
