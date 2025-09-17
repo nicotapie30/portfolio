@@ -6,7 +6,7 @@ const { src, alt, class: className = '' } = Astro.props;
   <img
     src={src}
     alt={alt}
-    class="my-image-right w-30 drop-shadow-2xl drop-shadow-purple-600/10 my-animate opacity-0 lg:opacity-55"
+    class="my-image-right w-30 drop-shadow-2xl drop-shadow-purple-600/10 my-animate opacity-0 xl:opacity-40"
   />
 </div>
 
@@ -15,8 +15,8 @@ const { src, alt, class: className = '' } = Astro.props;
 
   const moveImages = () => {
     floatImages.forEach((image) => {
-      const x = Math.random() * 100 - 30;
-      const y = Math.random() * 100 - 30;
+      const x = Math.random() * 100 - 20;
+      const y = Math.random() * 100 - 20;
 
       //@ts-ignore
       image.style.transform = `translate(${x}px, ${y}px)`;
