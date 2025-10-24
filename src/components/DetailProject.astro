@@ -6,13 +6,13 @@ const { content } = Astro.props;
 
 <details class="details flex detail-open">
   <summary
-    class="summary w-auto text-xs lg:text-base h-8 lg:w-44 lg:h-12 flex justify-center justify-self-center items-center opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 bg-gray-800/30 backdrop-blur-2xl border font-onest transition-all border-gray-300 text-white py-2 px-2.5 rounded-xl cursor-pointer hover:text-gray-900 hover:bg-white/95 focus:text-gray-900 focus:bg-white/95"
+    class="summary w-auto text-xs lg:text-base h-8 lg:w-44 lg:h-12 flex justify-center justify-self-center items-center opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 bg-gray-800/30 backdrop-blur-2xl border font-onest transition-all border-white/30 text-white py-2 px-2.5 rounded-xl cursor-pointer hover:text-gray-900 hover:bg-white/95 focus:text-gray-900 focus:bg-white/95"
   >
     Detalles
     <DownArrow />
   </summary>
   <div
-    class="detail text flex flex-col overflow-scroll overflow-x-hidden justify-between detail-shadow absolute justify-self-center inset-x-2 inset-y-1 h-auto z-40 font-onest bg-gray-800/70 backdrop-blur-3xl p-2 border border-white/40 text-white rounded-lg transition-all shadow-lg shadow-gray-900/50"
+    class="detail text flex flex-col overflow-y-auto overflow-x-hidden justify-between detail-shadow absolute justify-self-center inset-x-2 inset-y-1 h-auto z-40 font-onest bg-gray-800/70 backdrop-blur-3xl p-2 border border-white/30 text-white rounded-lg transition-all shadow-lg shadow-gray-900/50"
   >
     {content}
     <div class="flex justify-center items-center mt-4 mb-2 gap-4">
@@ -23,6 +23,7 @@ const { content } = Astro.props;
   <style>
     .detail {
       scrollbar-color: #222230 #36404f;
+      scrollbar-width: thin;
     }
   </style>
 
