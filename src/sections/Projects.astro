@@ -9,7 +9,7 @@ const { id } = Astro.props;
 ---
 
 <section
-  class="w-full h-full max-w-[1920px] p-1 md:p-4 mb-8 md:mb-30 mt-2 md:mt-40 xl:px-40 2xl:px-[420px]"
+  class="w-full h-full max-w-[1920px] scroll-m-20 p-1 md:p-4 mb-8 md:mb-30 mt-2 md:mt-40 xl:px-40 2xl:px-[420px]"
   id={id}
 >
   <h2
@@ -23,7 +23,7 @@ const { id } = Astro.props;
   >
     <!-- GEO ARGENTINA API -->
     <Project
-      src="/screenshots/geo-api.png"
+      src="/screenshots/geo-api.webp"
       alt="GeoArgentinaAPI"
       className="col-span-6"
     >
@@ -45,7 +45,7 @@ const { id } = Astro.props;
 
     <!-- CINE INFO -->
     <Project
-      src="/screenshots/cine-info.png"
+      src="/screenshots/cine-info.webp"
       alt="Memory Game"
       className="col-span-6 row-span-5 col-start-1 row-start-6"
     >
@@ -64,7 +64,7 @@ const { id } = Astro.props;
 
     <!-- MEMORY GAME -->
     <Project
-      src="/screenshots/memory.png"
+      src="/screenshots/memory.webp"
       alt="Memory Game"
       className="col-span-6 row-span-5 col-start-7 row-start-1"
     >
@@ -82,11 +82,30 @@ const { id } = Astro.props;
       </LinksProject>
     </Project>
 
+    <!-- ISOLINA -->
+    <Project
+      src="/screenshots/isolina.webp"
+      alt="Isolina"
+      className="col-span-6 row-span-5 col-start-7 row-start-6"
+    >
+      <LinksProject>
+        <ProjectLinkButton href="https://isolina.vercel.app" />
+        <DetailProject
+          content="ISOLINA es un emprendimiento de diseño y producción de indumentaria ubicado en La Pampa, que ofrece una experiencia personalizada y de alta calidad para quienes buscan prendas únicas. Su página presenta una interfaz limpia y minimalista que permite explorar fácilmente sus servicios, trabajos y contacto."
+        >
+          <IconsProjects src="/Astro.svg" alt="Astro" />
+          <IconsProjects src="/Tailwindcss.svg" alt="Tailwindcss" />
+          <IconsProjects src="/JavaScript.svg" alt="JavaScript" />
+          <IconsProjects src="/Vercel.svg" alt="Vercel" />
+        </DetailProject>
+      </LinksProject>
+    </Project>
+
     <!-- WEATHER WATCH -->
     <Project
-      src="/screenshots/weather.png"
-      alt="Memory Game"
-      className="col-span-6 row-span-5 col-start-7 row-start-6"
+      src="/screenshots/weather.webp"
+      alt="WheatherWatch"
+      className="place-self-center"
     >
       <LinksProject>
         <ProjectLinkButton href="https://weatherwatch-app.vercel.app/" />
