@@ -4,6 +4,7 @@ import DetailProject from '@/components/DetailProject.astro';
 import IconsProjects from '@/components/IconsProjects.astro';
 import Project from '@/components/Project.astro';
 import LinksProject from '@/components/LinksProject.astro';
+import Soon from './Soon.astro';
 
 const { id } = Astro.props;
 ---
@@ -118,5 +119,7 @@ const { id } = Astro.props;
         </DetailProject>
       </LinksProject>
     </Project>
+
+    <Soon />
   </div>
 </section>
